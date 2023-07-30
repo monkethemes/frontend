@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --vc-pgn-background-color: rgba(255,255,255,0.3);
+    --vc-pgn-active-color: rgba(255,255,255, 0.7);
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&family=Roboto+Mono&display=swap');
+
+  html, body {
+      height: 100vh; width: 100vw;
+      overflow-x: hidden;
+      font-family: 'Roboto Mono', monospace;
+      -webkit-overflow-scrolling: touch;
+  }
+
+  .lexend {
+      font-family: 'Lexend Deca', sans-serif !important;
+  }
+
+  .splide__arrow { background-color: hsl(var(--a)); }
+  .splide__arrow svg { fill: hsl(var(--s)); }
+  .splide__pagination__page{ background-color: hsl(var(--s)); }
+  .splide__pagination__page.is-active { background-color: hsl(var(--bc)); }
+
+  button, router-link {
+      text-transform: none !important;
+  }
+
+  html,body {scrollbar-color: #646669 #323437;}
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--lightestgrey); 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #646669; 
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4d4f52; 
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+
+  .color-picker .picker { box-shadow: none !important; width: auto !important; border-radius: 10px !important; border: .125rem solid hsl(var(--s)); overflow: hidden;}
+  .color-picker .picker-inner { padding: 0 !important;  }
+  .picker-inner .hue, .picker-inner .picker-header { margin: 0 !important; }
+  .picker-inner .colors, .picker-inner .input, .picker-inner .alpha { display: none !important; }
+  .color-picker .color-item { position: relative; width: 2rem !important; height: 2rem !important; border-radius: 9999px !important; border: none !important; z-index: 2;}
